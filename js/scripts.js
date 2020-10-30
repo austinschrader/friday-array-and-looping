@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(#"").submit(function(){
-
-  });
+	$('').submit(function () {
+		$('#').val();
+	});
 });
