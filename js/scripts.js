@@ -1,5 +1,5 @@
 $(document).ready(function () {
 	$('').submit(function () {
-		$('#').val();
+		let pizzaInput = $('#pizzaOne').val();
 	});
 });
