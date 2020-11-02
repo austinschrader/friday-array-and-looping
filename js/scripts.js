@@ -2,14 +2,15 @@
 function numberTo(userInput) {
 	let counter = 0;
 	for (let i = 0; i < parseInt(userInput); i++) {
-		if (counter.toString().indexOf('1') > -1) {
-			$('ol').append('<li>Beep!');
+		// alert('Hello');
+		// console.log(userInput, typeof userInput);
+		if (userInput > '0') {
+			$('.userResults').append('<li>Beep!');
+		}
+		if (counter.toString() == '1') {
+			$('userResults').append('<li>Beep!');
 			counter += 1;
 		}
-		if (i.includes('1')) {
-			console.log('This is a 1 digit');
-		}
-		$('.userResults').append('</br> Hello');
 	}
 }
 
