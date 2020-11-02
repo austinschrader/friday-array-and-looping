@@ -1,5 +1,11 @@
+// Backend Logic
 function numberTo(userInput) {
-	for (let i = 0; i < userInput; i++) {
+	let counter = 0;
+	for (let i = 0; i < parseInt(userInput); i++) {
+		if (counter.toString().indexOf('1') > -1) {
+			$('ol').append('<li>Beep!');
+			counter += 1;
+		}
 		if (i.includes('1')) {
 			console.log('This is a 1 digit');
 		}
@@ -7,10 +13,12 @@ function numberTo(userInput) {
 	}
 }
 
+// Front End Logic
 $(document).ready(function () {
 	$('#formOne').submit(function () {
 		event.preventDefault();
-		let userInput = parseInt($('#userInput').val());
+		let userInput = $('#userInput').val();
 		$('.userResults').append(userInput);
+		numberTo(userInput);
 	});
 });
