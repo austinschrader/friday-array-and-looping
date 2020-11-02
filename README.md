@@ -15,6 +15,39 @@ This project was created by Austin Schrader for the Friday project where we have
 3. Open the index.html file inside of your preferred browser
 4. Congratulations, this is the website!
 
+## Specs
+
+Describe: numberTo()
+Test: "It should append nothing if 0 is inputted"
+Expect(numberTo(0).toEqual([0]);
+
+Test: "It should append 'Boop' if 1 is inputted"
+Expect(numberTo(1).toEqual([1]);
+
+Test: "It should append 'Boop' if 911 is inputted"
+Expect(numberTo(911).toEqual([911]);
+
+Test: "It should append 'Beep' if 2 is inputted"
+Expect(numberTo(2).toEqual([2]);
+
+Test: "It should append 'Boop' if 211 is inputted"
+Expect(numberTo(921).toEqual([922]);
+
+Test: "It should append 'Won't you be my neighbor?' if 3 is inputted"
+Expect(numberTo(3).toEqual([3]);
+
+Test: "It should append 'Boop' if 933 is inputted"
+Expect(numberTo(933).toEqual([933]);
+
+Test: "It should append 'Won't you be my neighbor?' if 13 is inputted"
+Expect(numberTo(3).toEqual([13]);
+
+Test: "It should append 'Won't you be my neighbor?' if 21 is inputted"
+Expect(numberTo(3).toEqual([21]);
+
+Test: "It should append 'Won't you be my neighbor?' if 32 is inputted"
+Expect(numberTo(3).toEqual([32]);
+
 ## Known Bugs
 
 At this time, there are no known bugs. If you see spot a bug feel free to make a pull request.
