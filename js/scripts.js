@@ -20,6 +20,6 @@ $(document).ready(function () {
 		event.preventDefault();
 		let userInput = $('#userInput').val();
 		$('.userResults').append(userInput);
-		$('.userResults2').append(numberTo(userInput));
+		$('.userResults2').empty().append(numberTo(userInput));
 	});
 });
