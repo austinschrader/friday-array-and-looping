@@ -1,6 +1,7 @@
 // Backend Logic
 function numberTo(userInput) {
 	let userResults = Array.from(Array(parseInt(userInput)).keys());
+	console.log(userResults);
 
 	for (let i = 0; i < userResults.length; i++) {
 		if (userResults[i].toString().includes(3)) {
@@ -21,5 +22,9 @@ $(document).ready(function () {
 		let userInput = $('#userInput').val();
 		$('.userResults').append(userInput);
 		$('.userResults2').empty().append(numberTo(userInput));
+	});
+
+	$('.opposite-button').click(function () {
+		console.log('hello world');
 	});
 });
