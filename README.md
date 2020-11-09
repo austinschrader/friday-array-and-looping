@@ -40,13 +40,13 @@ Test: "It should append 'Won't you be my neighbor?' if 933 is inputted"
 Expect(numberTo(933).toEqual(['Won't you be my neighbor?']);
 
 Test: "It should append 'Won't you be my neighbor?' if 13 is inputted"
-Expect(numberTo(3).toEqual([13]);
+Expect(numberTo(13).toEqual(['Won't you be my neighbor?']);
 
 Test: "It should append 'Boop' if 21 is inputted"
-Expect(numberTo(3).toEqual(['Boop']);
+Expect(numberTo(21).toEqual(['Boop']);
 
 Test: "It should append 'Won't you be my neighbor?' if 32 is inputted"
-Expect(numberTo(3).toEqual(['Won't you be my neighbor?']);
+Expect(numberTo(32).toEqual(['Won't you be my neighbor?']);
 
 ## Known Bugs
 
