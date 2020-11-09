@@ -5,13 +5,14 @@ function numberTo(userInput) {
 
 	for (let i = 0; i < userResults.length; i++) {
 		if (userResults[i].toString().includes(3)) {
-			userResults[i] = 'Wont you be my neighbor? ';
+			userResults[i] = 'Wont you be my neighbor?';
 		} else if (userResults[i].toString().includes(2)) {
-			userResults[i] = 'Boop! ';
+			userResults[i] = 'Boop!';
 		} else if (userResults[i].toString().includes(1)) {
-			userResults[i] = 'Beep! ';
+			userResults[i] = 'Beep!';
 		}
 	}
+	console.log(userResults);
 	return userResults;
 }
 
@@ -25,6 +26,7 @@ $(document).ready(function () {
 	});
 
 	$('.opposite-button').click(function () {
-		console.log('hello world');
+		let userInput = $('.userResults2').val();
+		console.log(userInput);
 	});
 });
