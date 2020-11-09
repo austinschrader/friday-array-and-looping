@@ -12,8 +12,17 @@ function numberTo(userInput) {
 			userResults[i] = 'Beep!';
 		}
 	}
-	console.log(userResults);
 	return userResults;
+}
+
+function reverse(string) {
+	// Split a string on every character
+	let reversedString = string.split('');
+	// Reverses the order of elements
+	reversedString = reversedString.reverse();
+	// Combines the elements together
+	reversedString = reversedString.join('');
+	return reversedString;
 }
 
 // Front End Logic
@@ -26,7 +35,9 @@ $(document).ready(function () {
 	});
 
 	$('.opposite-button').click(function () {
-		let userInput = $('.userResults2').val();
+		let userInput = $('.userResults2').text();
+		let reverseduserInput = reverse(userInput);
+		$('.userResults2').empty().append(reverseduserInput);
 		console.log(userInput);
 	});
 });
