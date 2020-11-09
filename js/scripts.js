@@ -8,20 +8,15 @@ function numberTo(userInput) {
 	for (let i = 0; i < userResults.length; i++) {
 		if (userResults[i].toString().includes(1)) {
 			userResults[i] = 'Beep! ';
-		}
-		if (userResults[i].toString().includes(2)) {
+		} else if (userResults[i].toString().includes(2)) {
 			userResults[i] = 'Boop! ';
-		}
-		if (userResults[i].toString().includes(3)) {
+		} else if (userResults[i].toString().includes(3)) {
 			userResults[i] = 'Wont you be my neighbor? ';
-		}
-		if (userResults[i].toString() === '13') {
+		} else if (userResults[i].toString() === '13') {
 			userResults[i] = 'Wont you be my neighbor? ';
-		}
-		if (userResults[i].toString() === '21') {
+		} else if (userResults[i].toString() === '21') {
 			userResults[i] = 'Boop ';
-		}
-		if (userResults[i].toString() === '32') {
+		} else if (userResults[i].toString() === '32') {
 			userResults[i] = 'Wont you be my neighbor? ';
 		}
 	}
