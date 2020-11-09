@@ -1,8 +1,5 @@
 // Backend Logic
 function numberTo(userInput) {
-	let counter = 0;
-
-	// Initialize the array with 0 to userInput
 	let userResults = Array.from(Array(parseInt(userInput)).keys());
 
 	for (let i = 0; i < userResults.length; i++) {
